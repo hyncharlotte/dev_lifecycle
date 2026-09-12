@@ -87,19 +87,15 @@ Keep rejected reasoning alongside accepted decisions. When someone proposes the 
 
 ```
 dev_lifecycle/
-├── coding-skills/           the skill set (this is what you use)
+├── .claude/skills/          installed skills (configured for this repo)
+├── .github/                 PR template
+├── coding-skills/           distributable skill set (with [ADAPT] markers)
 │   ├── README.md            tool integration guide
 │   ├── audit/               project health check
-│   │   ├── SKILL.md         main instructions
-│   │   └── references/      report template
 │   ├── dev/                 development workflow
-│   │   ├── SKILL.md         main instructions
-│   │   └── references/      PRD/spec/status templates
 │   └── push/                ship workflow
-│       ├── SKILL.md         main instructions
-│       └── references/      PR template, CI troubleshooting
-├── CONTRIBUTING.md          how to contribute
 ├── CLAUDE.md                AI tool instructions for this repo
+├── CONTRIBUTING.md          how to contribute
 ├── LICENSE                  Apache 2.0
 └── README.md                this file
 ```
