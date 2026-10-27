@@ -1,13 +1,14 @@
 # Coding Skills
 
 A lightweight, tool-agnostic skill set for AI-assisted software development.
-Three skills, each one a proven workflow distilled from real-world project experience.
+Four skills, each one a proven workflow distilled from real-world project experience.
 
 | Skill | What it does | When to use |
 | --- | --- | --- |
 | **audit** | Project health check | "What shape is this codebase in?" |
 | **dev** | Development workflow | "Build this feature / fix this bug" |
-| **push** | Ship workflow | "Push it / open a PR / ship it" |
+| **push** | Commit-to-merge workflow | "Push it / open a PR" |
+| **ship** | Release build + release notes | "Release / build and write release notes" |
 
 ## How to use with different tools
 
@@ -19,7 +20,7 @@ Copy `coding-skills/` into `.claude/skills/`:
 cp -r coding-skills/* .claude/skills/
 ```
 
-Each `SKILL.md` becomes a slash command (`/audit`, `/dev`, `/push`).
+Each `SKILL.md` becomes a slash command (`/audit`, `/dev`, `/push`, `/ship`).
 
 ### Cursor
 
@@ -30,6 +31,7 @@ Merge the content of each `SKILL.md` into `.cursor/rules/` or `.cursorrules`:
 cp coding-skills/audit/SKILL.md .cursor/rules/audit.md
 cp coding-skills/dev/SKILL.md .cursor/rules/dev.md
 cp coding-skills/push/SKILL.md .cursor/rules/push.md
+cp coding-skills/ship/SKILL.md .cursor/rules/ship.md
 
 # Option B: append to a single .cursorrules file
 cat coding-skills/*/SKILL.md >> .cursorrules

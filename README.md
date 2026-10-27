@@ -2,11 +2,11 @@
 
 A lightweight, tool-agnostic skill set for AI-assisted software development.
 
-Three battle-tested workflows — audit, develop, ship — distilled from real project
+Four battle-tested workflows — audit, develop, push, release — distilled from real project
 experience into reusable instructions for any AI coding assistant.
 
 一套轻量、不绑定特定工具的 AI 辅助开发技能包。
-三个经过实战验证的工作流 — 体检、开发、交付 — 从真实项目经验中提炼，适用于任何 AI 编码助手。
+四个经过实战验证的工作流 — 体检、开发、交付、发版 — 从真实项目经验中提炼，适用于任何 AI 编码助手。
 
 ## What's inside / 包含什么
 
@@ -14,14 +14,16 @@ experience into reusable instructions for any AI coding assistant.
 coding-skills/
 ├── audit/          project health check / 项目体检
 ├── dev/            development workflow / 开发流程
-└── push/           ship workflow / 交付流程
+├── push/           commit-to-merge workflow / 交付流程
+└── ship/           release build + release notes / 发版
 ```
 
 | Skill | What it does | When to use |
 | --- | --- | --- |
 | **audit** | Measure-first code review: test credibility, code organization, docs vs reality | "What shape is this codebase in?" |
 | **dev** | Six-step workflow from requirement to done, each with a gate condition | "Build this feature" / "Fix this bug" |
-| **push** | Self-review, verify, commit, PR, watch CI, report | "Ship it" / "Open a PR" |
+| **push** | Self-review, verify, commit, PR, watch CI, report | "Push it" / "Open a PR" |
+| **ship** | Build the release, then a release page with one screenshot per change, a PDF, and release notes | "Release" / "Build and write release notes" |
 
 ## Quick start / 快速开始
 
@@ -31,7 +33,7 @@ coding-skills/
 cp -r coding-skills/* .claude/skills/
 ```
 
-Skills become available as `/audit`, `/dev`, `/push`.
+Skills become available as `/audit`, `/dev`, `/push`, `/ship`.
 
 ### Cursor
 
@@ -39,6 +41,7 @@ Skills become available as `/audit`, `/dev`, `/push`.
 cp coding-skills/audit/SKILL.md .cursor/rules/audit.md
 cp coding-skills/dev/SKILL.md .cursor/rules/dev.md
 cp coding-skills/push/SKILL.md .cursor/rules/push.md
+cp coding-skills/ship/SKILL.md .cursor/rules/ship.md
 ```
 
 ### Codex / Windsurf / Aider / Other
@@ -93,7 +96,8 @@ dev_lifecycle/
 │   ├── README.md            tool integration guide
 │   ├── audit/               project health check
 │   ├── dev/                 development workflow
-│   └── push/                ship workflow
+│   ├── push/                commit-to-merge workflow
+│   └── ship/                release build + release notes
 ├── CLAUDE.md                AI tool instructions for this repo
 ├── CONTRIBUTING.md          how to contribute
 ├── LICENSE                  Apache 2.0
