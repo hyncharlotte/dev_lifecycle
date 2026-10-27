@@ -40,7 +40,7 @@ Every change to a skill must pass these checks:
 - [ ] **Gate condition**: if you added a step, does it have a verifiable gate?
 - [ ] **No duplication**: does another skill already cover this?
 - [ ] **`[ADAPT]` markers**: project-specific values use markers, not hardcoded examples?
-- [ ] **Cross-references**: links between skills (audit ↔ dev ↔ push) still correct?
+- [ ] **Cross-references**: links between skills (audit ↔ dev ↔ push ↔ ship) still correct?
 - [ ] **README**: project-level and coding-skills/ READMEs still accurate?
 
 ## PR format

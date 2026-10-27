@@ -66,6 +66,6 @@ in prose and let the user implement it.
 
 Before shipping changes to skills:
 - Read the changed skill end-to-end. Does every sentence earn its place?
-- Check cross-references between skills (audit ↔ dev ↔ push). Still accurate?
+- Check cross-references between skills (audit ↔ dev ↔ push ↔ ship). Still accurate?
 - Verify `[ADAPT]` markers are present wherever a value is project-specific.
 - Ensure the README (project-level and coding-skills/) is still accurate.

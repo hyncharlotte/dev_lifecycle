@@ -7,7 +7,7 @@ Three skills, each one a proven workflow distilled from real-world project exper
 | --- | --- | --- |
 | **audit** | Project health check | "What shape is this codebase in?" |
 | **dev** | Development workflow | "Build this feature / fix this bug" |
-| **push** | Ship workflow | "Push it / open a PR / ship it" |
+| **push** | Commit-to-merge workflow | "Push it / open a PR" |
 
 ## How to use with different tools
 
