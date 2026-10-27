@@ -1,6 +1,6 @@
 ---
 name: push
-description: Ship workflow -- close out docs, self-review, run full tests, commit, push, open PR, enable auto-merge, watch CI and fix failures yourself. Use when someone says "push" / "commit" / "open a PR" / "ship it" / "done" / "wrap up" / "merge it". Goal is the user only needs to check two things -- tests green and the right things are shipping.
+description: Commit-to-merge workflow -- close out docs, self-review, run full tests, commit, push, open PR, enable auto-merge, watch CI and fix failures yourself. Use when someone says "push" / "commit" / "open a PR" / "done" / "wrap up" / "merge it". Goal is the user only needs to check two things -- tests green and the right things are shipping. For a release build plus release notes, use /ship instead.
 ---
 
 # push: Ship the finished work
